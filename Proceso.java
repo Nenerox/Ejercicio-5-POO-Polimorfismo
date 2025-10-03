@@ -1,7 +1,7 @@
 public abstract class Proceso {
-    private String nombre;
-    private String PID;
-    private String accion;
+    protected String nombre;
+    protected String PID;
+    protected String accion;
 //constructor
     public Proceso(String nombre, String PID, String accion) {
         this.nombre = nombre;
