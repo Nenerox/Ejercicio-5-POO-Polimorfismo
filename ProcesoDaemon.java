@@ -1,11 +1,11 @@
 public class ProcesoDaemon extends Proceso{
     
-    public ProcesoDaemon(){
-        super("Daemon", 2);
+    public ProcesoDaemon(String nombre, String PID, String accion) {
+        super(nombre, PID, accion);
     }
 
     @Override
-    public String ejecutar() {
-        return "E";
+    public String ejecutar(String PID, String nombre, String accion) {
+        return "Ejecutando Proceso Daemon "+ nombre + ":" + accion;
     }
 }
