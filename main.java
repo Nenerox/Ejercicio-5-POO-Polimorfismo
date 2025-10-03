@@ -3,9 +3,11 @@ public class main {
     public static void main(String[] args) {
         Controlador controlador = new Controlador();
         Scanner scanner = new Scanner(System.in);
-        int opcion;
-
+        int opcion = 0;
+    
         System.out.println("Bienvenido al sistema");
+        while(opcion != 5){
+
         System.out.println("Seleccione una opcion:");
         System.out.println("1. Agregar proceso");
         System.out.println("2. Ejecutar proceso");
@@ -15,7 +17,6 @@ public class main {
         opcion = scanner.nextInt();
         scanner.nextLine(); // Consumir el salto de linea
 
-        while(opcion != 5){
             switch (opcion) {
                 case 1:
                     System.out.println("Ingrese el tipo de proceso (CPU, IO, Daemon):");
