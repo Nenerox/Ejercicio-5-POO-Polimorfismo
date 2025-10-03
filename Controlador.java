@@ -37,4 +37,8 @@ public class Controlador {
             }
         }
     }
+    
+    public ArrayList<Proceso> getProcesos() {
+        return procesos;
+    }
 }
