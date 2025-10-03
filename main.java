@@ -43,6 +43,8 @@ public class main {
                         System.out.println("Nombre: " + p.getNombre() + ", PID: " + p.getPID() + ", Accion: " + p.getAccion());
                     }
                     break;
+                case 5:
+                    break;
                 default:
                     System.out.println("Opcion no valida");
                     break;
